@@ -1,0 +1,144 @@
+.laysux__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 6rem;
+}
+
+.laysux__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ .laysux__navbar-links_logo{
+    margin-right: 2rem;
+ }
+
+ .laysux__navbar-links_logo img{
+    width: auto;
+    height: 85px;
+ }
+
+ .laysux__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .laysux__navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ .laysux__navbar-links_container p,
+ .laysux__navbar-sign p,
+ .laysux__navbar-menu_container p{
+    color: rgb(0, 0, 0);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+ }
+
+ .laysux__navbar-sign button,
+ .laysux__navbar-menu_container button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 14% 23%, rgba(255, 0, 0, 1) 0%, rgba(223, 99, 110, 1) 50%, rgba(255, 175, 175, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 14% 23%, rgba(255, 0, 0, 1) 0%, rgba(223, 99, 110, 1) 50%, rgba(255, 175, 175, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 14% 23%, rgba(255, 0, 0, 1) 0%, rgba(223, 99, 110, 1) 50%, rgba(255, 175, 175, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 14% 23%, rgba(255, 0, 0, 1) 0%, rgba(223, 99, 110, 1) 50%, rgba(255, 175, 175, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 14% 23%, rgba(255, 0, 0, 1) 0%, rgba(223, 99, 110, 1) 50%, rgba(255, 175, 175, 1) 100%);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+ }
+
+ .laysux__navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+ }
+
+ .laysux__navbar-menu png{
+    cursor: pointer;
+ }
+
+ .laysux__navbar-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+ }
+
+ .laysux__navbar-menu_container p{
+    margin: 1rem 0;
+ }
+
+ .laysux__navbar-menu_container-links-sign{
+    display: none;
+ }
+
+ @media screen and (max-width: 1050px){
+    .laysux__navbar-links_container{
+        display: none;
+    }
+
+    .laysux__navbar-menu{
+        display: flex;
+    }
+ }
+
+ @media screen and (max-width: 700px){
+    .laysux__navbar{
+        padding: 2rem 4rem;
+    }
+ }
+
+ @media screen and (max-width: 550px){
+    .laysux__navbar{
+        padding: 2rem
+    }
+
+    .laysux__navbar-sign{
+        display: none;
+    }
+
+    .laysux__navbar-menu_container{
+        top: 20px;
+    }
+
+    .laysux__navbar-menu_container-links-sign{
+        display: block;
+    }
+ }
